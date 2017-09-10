@@ -22,7 +22,7 @@ public class GameManager
 	}
 
 	public void EndGame ()
-	{
+	{	
 		if (OnGameOver != null)
 			OnGameOver ();
 		IsPlaying = false;

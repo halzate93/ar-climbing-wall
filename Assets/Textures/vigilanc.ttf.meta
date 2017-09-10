@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0a4f4438fd54d42b7acc94b3db30e929
+timeCreated: 1505000882
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Vigilance BRK
+  fontNames:
+  - Vigilance BRK
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

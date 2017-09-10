@@ -6,13 +6,13 @@ using Zenject;
 public class DummyGameController : ITickable
 {
 	private GameManager gameManager;
-	private LeakGenerator generator;
+	private LeakManager leaks;
 
 
-	public DummyGameController (GameManager gameManager, LeakGenerator generator)
+	public DummyGameController (GameManager gameManager, LeakManager leaks)
 	{
 		this.gameManager = gameManager;
-		this.generator = generator;
+		this.leaks = leaks;
 	}
 
     public void Tick()
@@ -20,6 +20,7 @@ public class DummyGameController : ITickable
         if (!gameManager.IsPlaying && Input.GetButtonDown ("Submit"))
 			gameManager.StartGame ();
 		if (gameManager.IsPlaying && Input.GetButtonDown ("Break"))
-			generator.GenerateLeak ();
+			leaks.CompleteTouch ();
     }
 }
+ 

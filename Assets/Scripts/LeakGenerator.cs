@@ -13,12 +13,12 @@ public class LeakGenerator : MonoBehaviour
 	[Inject]
 	private Leak.Factory leakFactory;
 
-	public void GenerateLeak ()
+	public Leak GenerateLeak ()
 	{
 		Leak leak = leakFactory.Create ();
 		leak.transform.position = GetRandomPosition ();
 		leak.transform.parent = transform;
-		Debug.Log ("New leak!");
+		return leak;
 	}
 
     private Vector3 GetRandomPosition()
