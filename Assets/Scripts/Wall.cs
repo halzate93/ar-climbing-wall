@@ -33,7 +33,7 @@ public class Wall : MonoBehaviour
 			Break ();
 	}
 
-	private void Break ()
+	public void Break ()
 	{
 		lifes--;
 		currentHealthPoints = healthPoints;
